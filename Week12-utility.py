@@ -26,5 +26,17 @@ def UpdateString(string_1, string_2, i):
         output += letter
     PrintOutput(output)
     
+# FindWordCount Function
 
+def FindWordCount(ls, string_1):
+    count = 0
+    new_list = ''
+    for i in ls:
+        for j in i:
+            new_list += j
+        final_list = new_list.split()
+        for i in final_list:
+            if i == string_1:
+                count += 1
+    return count
 
