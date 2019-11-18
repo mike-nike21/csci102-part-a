@@ -7,3 +7,11 @@
 
 def PrintOutput(string):
     print('OUTPUT',string)
+
+# LoadFile Function
+
+def LoadFile(file_name):
+    open_file = open(file_name, 'r')
+    contents = open_file.read().split('\n')
+    PrintOutput(contents)
+    open_file.close()
