@@ -54,7 +54,22 @@ def ScoreFinder(ls_1,ls_2,string_1):
     else:
         print('OUTPUT player not found')
 
+# Union Function
 
+def Union(ls_1,ls_2):
+    final_list = []
+    for word in ls_1:
+        if word not in final_list:
+            final_list.append(word)
+    for words in ls_2:
+        if words not in final_list:
+            final_list.append(words)
+    return final_list
+
+
+
+
+    
     
                 
 
