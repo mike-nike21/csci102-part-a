@@ -66,6 +66,22 @@ def Union(ls_1,ls_2):
             final_list.append(words)
     return final_list
 
+# Intersection Function
+
+def Intersection(ls_1,ls_2):
+    middle_list = []
+    final_list = []
+    for word in ls_1:
+        if word in ls_2:
+            middle_list.append(word)
+    for words in ls_2:
+        if words in ls_1:
+            middle_list.append(words)
+    for dupe in middle_list:
+        if dupe not in final_list:
+            final_list.append(dupe)
+    return final_list
+
 
 
 
