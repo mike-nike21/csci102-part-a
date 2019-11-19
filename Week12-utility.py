@@ -40,3 +40,21 @@ def FindWordCount(ls, string_1):
                 count += 1
     return count
 
+# ScoreFinder Function
+
+def ScoreFinder(ls_1,ls_2,string_1):
+    new_player = string_1.lower()
+    lower_list = []
+    for player in ls_1:
+        lower_list.append(player.lower())
+    if new_player in lower_list:
+        for i in lower_list:
+            i = lower_list.index(new_player)
+        print('OUTPUT', string_1, 'got a score of', ls_2[i])
+    else:
+        print('OUTPUT player not found')
+
+
+    
+                
+
