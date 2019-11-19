@@ -82,6 +82,17 @@ def Intersection(ls_1,ls_2):
             final_list.append(dupe)
     return final_list
 
+# NotIn Function
+
+def NotIn(ls_1,ls_2):
+    final_list = []
+    for word in ls_1:
+        if word not in ls_2:
+            final_list.append(word)
+    return final_list
+
+
+
 
 
 
